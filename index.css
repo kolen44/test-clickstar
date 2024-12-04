@@ -1,0 +1,183 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'TildaSansRegular' !important;
+	background: linear-gradient(
+		98deg,
+		rgba(244, 244, 244, 0.43) 25%,
+		rgba(242, 242, 242, 0.61) 100%
+	);
+}
+
+.navbar .navbar-brand {
+	color: #9d7d46;
+	color: #9a8869;
+	font-family: 'TildaSansMedium';
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 100%;
+}
+.navbar .navbar-nav .nav-link {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 120%;
+}
+
+section {
+	margin-top: 100px;
+}
+section .card {
+	border: none;
+	transition: 0.7s;
+}
+section .card:hover {
+	z-index: 2;
+	border-top: 13px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 18px 71.8px 0px rgba(107, 107, 107, 0.15);
+	transition: box-shadow 1s ease;
+}
+section .card .card-img {
+	width: 200px;
+	border-radius: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+section .card .card-text .name,
+section .card .card-text .age,
+section .card .card-text .city {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 18px;
+	font-family: 'TildaSansRegular';
+	font-style: normal;
+	font-weight: 300;
+	color: #9a8869;
+}
+section .card .card-text .name span,
+section .card .card-text .age span,
+section .card .card-text .city span {
+	color: #000;
+}
+section .card .card-text .line {
+	width: 10px;
+	height: 2px;
+	background: #9a8869;
+}
+section .card .btn-card {
+	border: none;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 100%;
+	border-radius: 5px;
+	background: linear-gradient(115deg, #6b6b6b 28.53%, #000 113.79%);
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	text-transform: uppercase;
+}
+section .card .btn-card:hover {
+	background: linear-gradient(136deg, #e4e3e0 0%, #9d7d46 100%);
+	color: white;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+footer .links-social a {
+	background: rgb(216, 205, 188);
+	color: #fff;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+footer .links-social a img {
+	width: 30px;
+	height: 30px;
+}
+
+.modal .modal-header {
+	border-bottom: none;
+}
+.modal .modal-header .modal-title {
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+	color: #4b4b4b;
+	font-family: 'TildaSansMedium';
+}
+.modal .modal-header button {
+	width: 30px;
+	height: 30px;
+	--bs-btn-close-bg: none;
+	padding: 0;
+}
+.modal .modal-body {
+	display: flex;
+	gap: 20px;
+}
+.modal .modal-body #modal-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+.modal .modal-body .modal-text strong {
+	font-size: 20px;
+	font-family: 'TildaSansRegular';
+	font-style: normal;
+	font-weight: 300;
+	color: #9a8869;
+}
+
+@media (max-width: 475px) {
+	.modal .modal-body {
+		display: grid;
+		gap: 20px;
+	}
+	.navbar-brand {
+		font-size: 18px !important;
+		width: 200px;
+		white-space: wrap !important;
+	}
+
+	.modal .modal-body #modal-img {
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (min-width: 1200px) {
+	#navbarNavDropdown {
+		display: none !important;
+	}
+
+	section {
+		margin-top: 80px;
+	}
+}

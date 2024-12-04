@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Адаптивная веб-страница с Bootstrap</title>
+		<link rel="icon" type="image/x-icon" href="./favicon_io1/favicon.ico" />
+		<link rel="stylesheet" href="./index.css" />
+		<link
+			rel="stylesheet"
+			href="./TildaSans.07Web/TildaSans/TildaSans-Black.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+	</head>
+
+	<body>
+		<header>
+			<nav
+				class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-body-tertiary shadow-lg"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="./index.html"
+						>Адаптивная веб-страница
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">О нас</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#links">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<div class="container">
+				<div
+					class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 g-4"
+				>
+					<div class="col">
+						<div class="card h-100">
+							<img
+								src="./img/avatar.png"
+								class="card-img person-img"
+								alt="Avatar"
+							/>
+							<div class="card-body">
+								<div class="card-text">
+									<div class="name">
+										имя
+										<div class="line"></div>
+										<span class="person-name">Иван Иванов</span>
+									</div>
+									<div class="age">
+										возраст
+										<div class="line"></div>
+										<span class="person-age">30 лет</span>
+									</div>
+									<div class="city">
+										город
+										<div class="line"></div>
+										<span class="person-city">Санкт-Петербург</span>
+									</div>
+									<div class="description d-none">
+										Иван Иванов — профессиональный фотограф с 10-летним опытом,
+										специализирующийся на портретной съемке.
+									</div>
+								</div>
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+									class="btn btn-card d-flex m-auto mt-4"
+								>
+									Подробнее
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<img
+								src="./img/avatar.png"
+								class="card-img person-img"
+								alt="Avatar"
+							/>
+							<div class="card-body">
+								<div class="card-text">
+									<div class="name">
+										имя
+										<div class="line"></div>
+										<span class="person-name">Мария Смирнова</span>
+									</div>
+									<div class="age">
+										возраст
+										<div class="line"></div>
+										<span class="person-age">28 лет</span>
+									</div>
+									<div class="city">
+										город
+										<div class="line"></div>
+										<span class="person-city">Москва</span>
+									</div>
+									<div class="description d-none">
+										Мария Смирнова — опытный дизайнер интерьеров, работающий с
+										клиентами более 8 лет. Специализируется на создании
+										современных и функциональных пространств.
+									</div>
+								</div>
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+									class="btn btn-card d-flex m-auto mt-4"
+								>
+									Подробнее
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<img
+								src="./img/avatar.png"
+								class="card-img person-img"
+								alt="Avatar"
+							/>
+							<div class="card-body">
+								<div class="card-text">
+									<div class="name">
+										имя
+										<div class="line"></div>
+										<span class="person-name">Алексей Петров</span>
+									</div>
+									<div class="age">
+										возраст
+										<div class="line"></div>
+										<span class="person-age">35 лет</span>
+									</div>
+									<div class="city">
+										город
+										<div class="line"></div>
+										<span class="person-city">Казань</span>
+									</div>
+									<div class="description d-none">
+										Алексей Петров — сертифицированный фитнес-тренер с опытом
+										работы более 12 лет. Помогает клиентам достигать спортивных
+										целей с индивидуальным подходом.
+									</div>
+								</div>
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+									class="btn btn-card d-flex m-auto mt-4"
+								>
+									Подробнее
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<img
+								src="./img/avatar.png"
+								class="card-img person-img"
+								alt="Avatar"
+							/>
+							<div class="card-body">
+								<div class="card-text">
+									<div class="name">
+										имя
+										<div class="line"></div>
+										<span class="person-name">Ольга Васильева</span>
+									</div>
+									<div class="age">
+										возраст
+										<div class="line"></div>
+										<span class="person-age">26 лет</span>
+									</div>
+									<div class="city">
+										город
+										<div class="line"></div>
+										<span class="person-city">Новосибирск</span>
+									</div>
+									<div class="description d-none">
+										Ольга Васильева — веб-разработчик с 5-летним опытом работы.
+										Специализируется на создании адаптивных веб-сайтов и
+										приложений.
+									</div>
+								</div>
+								<button
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+									class="btn btn-card d-flex m-auto mt-4"
+								>
+									Подробнее
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-body-tertiary text-center mt-5">
+			<!-- Grid container -->
+			<div class="container p-4">
+				<div
+					id="links"
+					class="links-social d-flex justify-content-center align-items-center gap-3"
+				>
+					<a class="link-opacity-50-hover" href="https://www.instagram.com/">
+						<img src="./img/instagram.svg" alt="instagram" />
+					</a>
+					<a class="link-opacity-50-hover" href="https://www.facebook.com/">
+						<img src="./img/facebook.svg" alt="facebook" />
+					</a>
+					<a class="link-opacity-50-hover" href="https://x.com/?lang=ru">
+						<img src="./img/twitter.svg" alt="twitter" />
+					</a>
+				</div>
+			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3">
+				© 2024 Copyright:
+				<a class="text-body">MDBootstrap.com</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title" id="exampleModalLabel">
+							Детальная информация
+						</h2>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						>
+							<img src="./img/x.svg" alt="x" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<img id="modal-img" src="" alt="Avatar" class="img-fluid mb-3" />
+						<div class="modal-text">
+							<p><strong>Имя:</strong> <span id="modal-name"></span></p>
+							<p><strong>Возраст:</strong> <span id="modal-age"></span></p>
+							<p><strong>Город:</strong> <span id="modal-city"></span></p>
+							<p>
+								<strong>Описание:</strong> <span id="modal-description"></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
